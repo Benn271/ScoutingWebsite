@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Scouting</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
+
+</head>
+<body> 
+    
+    <div>
+        <a href="Home.html"><button class="topleft" type="button" >Home</button></a>
+    </div>
+
+    <div>   
+    <a href="login.html"><button class="topright" type="button" >Log Out</button></a> <br><br><br><br><br><br><br><br><br>
+    </div>
+
+    <h1 style="font-family: Monaco;">Match Scouting</h1>
+
+    <form>
+        <div class="infoM">
+            <!--Auto-->
+            <h2 style="font-family: Monaco;">Auto</h2> <br>
+
+            <hr style="border:10px solid black">
+
+            
+
+            <h3 style="font-family: Monaco;">Cone</h3> <br>
+
+            <hr style="border:5px solid black"><br>
+
+            <!--Cone-->
+            <label class="labelText" for="ConeH" style="padding: 25px;">High:  </label> 
+            <label class="labelText" for="ConeM" style="padding: 25px;">Middle:  </label> 
+            <label class="labelText" for="ConeM" style="padding: 25px;">Low:  </label> 
+            <label class="labelText" for="Missed1" style="margin-left: 200px; margin-right: -380px;">Missed:</label> <br> 
+
+            <button onclick="hCone('+')" type="button" class="buttonsp">+</button>
+            <button onclick="mCone('+')" type="button" class="buttonsp">+</button>
+            <button onclick="lCone('+')" type="button" class="buttonsp">+</button>
+            <button onclick="Missed1('+')" type="button" class="buttonsp" style="margin-left: 200px; margin-right: -380px;">+</button> <br><br><br>
+
+            <input id="ConeH" class="blankinput" type="number"></input>
+            <input id="ConeM" class="blankinput" type="number"></input>
+            <input id="ConeL" class="blankinput" type="number"></input>
+            <input id="Missed1" class="blankinput" type="number" style="margin-left: 200px; margin-right: -380px;"></input><br>
+            
+            <button onclick="hCone('-')" class="buttonsm" type="button">-</button>
+            <button onclick="mCone('-')" class="buttonsm" type="button">-</button> 
+            <button onclick="lCone('-')" class="buttonsm" type="button">-</button> 
+            <button onclick="Missed1('-')" class="buttonsm" type="button" style="margin-left: 200px; margin-right: -380px;">-</button> <br><br>
+
+
+            <hr style="border:5px solid black">
+
+            <h3 style="font-family: Monaco;">Cube</h3> <br>
+
+            <hr style="border:5px solid black">
+
+            <!--Cube-->
+            <label class="labelText" for="CubeH" style="padding: 25px;">High: </label> 
+            <label class="labelText" for="CubeM" style="padding: 25px;">Middle: </label> 
+            <label class="labelText" for="CubeM" style="padding: 25px;">Low: </label> 
+            <label class="labelText" for="Missed2" style="margin-left: 200px; margin-right: -380px;">Missed:</label> <br> 
+
+            <button onclick="hCube('+')" type="button" class="buttonsp">+</button>
+            <button onclick="mCube('+')" type="button" class="buttonsp">+</button>
+            <button onclick="lCube('+')" type="button" class="buttonsp">+</button>
+            <button onclick="Missed2('+')" type="button" class="buttonsp" style="margin-left: 200px; margin-right: -380px;">+</button> <br><br><br>
+
+            <input id="CubeH" class="blankinput" type="number"></input>
+            <input id="CubeM" class="blankinput" type="number"></input>
+            <input id="CubeL" class="blankinput" type="number"></input>
+            <input id="Missed2" class="blankinput" type="number" style="margin-left: 200px; margin-right: -380px;"></input><br>
+
+            <button onclick="hCube('-')" class="buttonsm" type="button">-</button> 
+            <button onclick="mCube('-')" class="buttonsm" type="button">-</button> 
+            <button onclick="lCube('-')" class="buttonsm" type="button">-</button> 
+            <button onclick="Missed2('-')" class="buttonsm" type="button" style="margin-left: 200px; margin-right: -380px;">-</button> <br><br>
+
+            <hr style="border:5px solid black">
+
+
+            <label class="labelText" for="Charge">Charged</label> <br>
+
+            <select class="dropDown" name="Charge" id="Charge">
+                <option class="dropdownformat" value="False">False</option>
+                <option class="dropdownformat" value="True">True</option>
+                <input class="iNputbox" id="chargenum" type="number" style="width: 300px;" placeholder="How many charged?"></input>
+            </select> <br><br>
+
+        </div>
+
+
+        <br><br><hr style="border:25px solid rgb(255, 255, 255); border-radius: 5px;"><br><br>
+
+        <!--Teleop-->
+
+        <div class="infoM">
+            
+            <h2 style="font-family: Monaco;">Teleop</h2> <br>
+
+            <hr style="border:10px solid black">
+
+        
+
+            <hr style="border:5px solid black"><br>
+
+            <!--Cone-->
+            <label class="labelText" for="ConeHt" style="padding: 25px;">High: </label> 
+            <label class="labelText" for="ConeMt" style="padding: 25px;">Middle: </label> 
+            <label class="labelText" for="ConeMt" style="padding: 25px;">Low: </label> 
+            <label class="labelText" for="Missed3" style="margin-left: 200px; margin-right: -380px;">Missed:</label> <br> 
+
+
+            <button onclick="thCone('+')" type="button" class="buttonsp">+</button>
+            <button onclick="tmCone('+')" type="button" class="buttonsp">+</button>
+            <button onclick="tlCone('+')" type="button" class="buttonsp">+</button>
+            <button onclick="Missed3('+')" type="button" class="buttonsp" style="margin-left: 200px; margin-right: -380px;">+</button> <br><br><br>
+
+            <input id="ConeHt" class="blankinput" type="number"></input>
+            <input id="ConeMt" class="blankinput" type="number"></input>
+            <input id="ConeLt" class="blankinput" type="number"></input>
+            <input id="Missed3" class="blankinput" type="number" style="margin-left: 200px; margin-right: -380px;"></input><br>
+            
+            <button onclick="thCone('-')" class="buttonsm" type="button">-</button>
+            <button onclick="tmCone('-')" class="buttonsm" type="button">-</button> 
+            <button onclick="tlCone('-')" class="buttonsm" type="button">-</button> 
+            <button onclick="Missed3('-')" class="buttonsm" type="button" style="margin-left: 200px; margin-right: -380px;">-</button> <br><br>
+
+        
+
+            <hr style="border:5px solid black">
+
+            <h3 style="font-family: Monaco;">Cone</h3> <br>
+
+            <hr style="border:5px solid black">
+
+            <!--Cube-->
+            <label class="labelText" for="CubeHt" style="padding: 25px;">High: </label> 
+            <label class="labelText" for="CubeMt" style="padding: 25px;">Middle: </label> 
+            <label class="labelText" for="CubeMt" style="padding: 25px;">Low: </label> 
+            <label class="labelText" for="Missed3" style="margin-left: 200px; margin-right: -380px;">Missed:</label> <br> 
+
+            <button onclick="thCube('+')" type="button" class="buttonsp">+</button>
+            <button onclick="tmCube('+')" type="button" class="buttonsp">+</button>
+            <button onclick="tlCube('+')" type="button" class="buttonsp">+</button>
+            <button onclick="Missed3('+')" type="button" class="buttonsp" style="margin-left: 200px; margin-right: -380px;">+</button> <br><br><br>
+
+            <input id="CubeHt" class="blankinput" type="number"></input>
+            <input id="CubeMt" class="blankinput" type="number"></input>
+            <input id="CubeLt" class="blankinput" type="number"></input>
+            <input id="Missed3" class="blankinput" type="number" style="margin-left: 200px; margin-right: -380px;"></input><br>
+
+            <button onclick="thCube('-')" class="buttonsm" type="button">-</button> 
+            <button onclick="tmCube('-')" class="buttonsm" type="button">-</button> 
+            <button onclick="tlCube('-')" class="buttonsm" type="button">-</button> 
+            <button onclick="Missed3('-')" class="buttonsm" type="button" style="margin-left: 200px; margin-right: -380px;">-</button> <br><br>
+
+            <hr style="border:5px solid black">
+
+            <label class="labelText" for="Charget">Charged</label> <br>
+
+
+            <select class="dropDown" name="Charge" id="Charget">
+                <option class="dropdownformat"value="False">False</option>
+                <option class="dropdownformat" value="True">True</option>
+                <input class="iNputbox" id="chargenumt" type="number" style="width: 300px;" placeholder="How many charged?"></input>
+            </select> <br><br>
+
+
+        </div>
+        <br><br><br>
+    
+       <center> 
+        <buttons id="anaSub" class="buttons" type="submit" onclick="submitMatch()">Submit</buttons> <br><br><br><br><br><br><br><br><br>
+        </center>
+    </form>
+    </div>
+
+
+
+    <!--
+        <label class='labelText' for="Cone Auto">Cone Auto:</label>
+        <input id="Cone Auto" name="Cone Auto" class="inputbox" type='text'></input><br>
+
+        <label class='labelText' for="Cube Auto">Cube Auto:</label>
+        <input id="Cube Auto" name="Cube Auto" class="inputbox" type='text'></input><br>
+
+        <label class='labelText' for="Teleop">Teloep:</label>
+        <input id="Teleop" name="Teleop" class="inputbox" type='text'></input><br>
+    -->
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

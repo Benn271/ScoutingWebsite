@@ -1,0 +1,580 @@
+/* The above code is a CSS stylesheet. It sets the styling for various elements on a webpage. Here is a
+breakdown of what the code is doing: */
+/* The CSS code `*{}` is a universal selector that targets all elements on the webpage. */
+*{
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+    font-family: 'Chela One', cursive;
+}
+
+
+/* Pit */
+
+/* The CSS code `body{}` is targeting the `<body>` element of the webpage. It sets the background image
+of the body using a linear gradient. The gradient starts at a 45-degree angle and has three colors:
+#4ab56c, #57a87e, and #0e5734. The background image is set to not repeat and is fixed in place. */
+
+body{
+    background-image: linear-gradient(45deg, #4ab56c ,#57a87e ,#0e5734);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* The `::selection` selector is used to style the portion of text that is selected by the user. In
+this case, it sets the color of the selected text to `#0e5734` (a shade of green) and the background
+color to `rgb(0, 0, 0)` (black). */
+::selection {
+    color: #0e5734;
+    background: rgb(0, 0, 0);
+}
+
+h1 {
+    color: white;
+    font-family: Monaco;
+    text-align: center;
+    font-size: 200px;
+}
+
+h2 {
+    color: white;
+    font-family: Monaco;
+    text-align: center;
+    font-size: 100px;
+}
+
+h3{
+    color: white;
+    font-family: Monaco;
+    text-align: center;
+    font-size: 100px;
+}
+
+h4{
+    color: white;
+    font-family: Monaco;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+
+.info{
+    border: 10px solid;
+    border-radius: 20px;
+    color: black;
+    width:	46%;
+    height: 85%;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 1%;
+    display: flexbox;
+    justify-content: center;
+}
+
+.infoM{
+    border: 10px solid;
+    border-radius: 20px;
+    color: black;
+    width:	auto;
+    height: 85%;
+    margin-top: 1%;
+    text-align: center;
+    display: flexbox;
+    justify-content: center;
+}
+
+
+
+
+.labelText{
+    font-family: Monaco;
+    color: white;
+    font-size: 50px;
+    display: flexbox;
+    text-align: center;
+}
+
+.inputbox{
+    border: 3px solid darkslategray;
+    border-radius: 50px;
+    width:40%;
+    height: 40px;
+    font-family: Monaco;
+    font-size: 30px; 
+    box-shadow: 10px 7px 15px rgb(54, 54, 54);
+    text-align: center;
+}
+
+
+.inputBox{
+    border: 3px solid darkslategray;
+    border-radius: 50px;
+    width:95%;
+    height: 60px;
+    font-family: Monaco;
+    font-size: 25px;
+    box-shadow: 10px 7px 15px rgb(54, 54, 54);
+}
+
+
+.iNputbox{
+    border: 3px solid darkslategray;
+    border-radius: 50px;
+    width:40%;
+    height: 75px;
+    font-family: Monaco;
+    font-size: 25px;
+    box-shadow: 10px 7px 15px rgb(54, 54, 54);
+    text-align: center;
+}
+
+.ebox{
+    border: 3px solid darkslategray;
+    border-radius: 100px;
+    width:40%;
+    height: 40px;
+    font-family: Monaco;
+    font-size: 30px;
+}
+
+/* For Any Button*/
+#buttons{
+    transition: 0.5s;
+    cursor: pointer;
+    width:	50%;
+	height: 5%;
+	margin-top: 1.5%;
+	font-size: 100px;
+	font-family: Monaco, Bold;
+    justify-content: center;
+    background: linear-gradient(45deg, green, #0e5734); 
+    border: 10px solid;
+    border-radius: 100px;
+    box-shadow: 15px 18px 15px rgb(54, 54, 54);
+}
+
+/* For Any Button*/
+#buttons:hover{
+    transition: 0.5s;
+    background: linear-gradient(45deg, #0e5734, green);
+    color: limegreen;
+    border: 10px solid black;
+    border-radius: 100px;
+    box-shadow: 25px 25px 15px rgb(54, 54, 54);
+    transform: scale(1.1);
+    transform: rotateZ(5deg);
+}
+
+
+
+/* For Submit*/
+.buttons{
+    transition: 0.5s;
+    cursor: pointer;
+    width:	50%;
+	height: 5%;
+	margin-top: 1.5%;
+	font-size: 100px;
+	font-family: Monaco, Bold;
+    justify-content: center;
+    background: linear-gradient(45deg, green, #0e5734); 
+    border: 10px solid;
+    border-radius: 100px;
+    box-shadow: 15px 18px 15px rgb(54, 54, 54);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* For Submit*/
+.buttons:hover{
+    transition: 0.5s;
+    background: linear-gradient(45deg, #0e5734, green);
+    color: limegreen;
+    border: 10px solid black;
+    border-radius: 100px;
+    box-shadow: 25px 25px 15px rgb(54, 54, 54);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+.dropdown{
+    transition: 0.5s;
+    border: 0px solid white; 
+    width: 250px;
+    height: 50px;
+    border-radius: 15px;
+    font-family: Monaco;
+    font-size: 30px;
+    text-align: center;
+}
+
+.dropdown:hover{
+    transition: 5s;
+    transform: scale(1.1);
+}
+
+.dropdownformat{
+    border: 100px solid black;
+    border-radius: 10px;
+    font-family: Monaco;
+    font-size: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.dropDown{
+    transition: 0.5s;
+    border: 0px solid white;
+    border-radius: 20px;
+    width: 110px;
+    height: 65px;    
+    font-family: Monaco;
+    font-size: 30px;
+    padding-left: 20px;
+    box-shadow: 10px 10px 15px rgb(54, 54, 54);
+    text-align: center;
+}
+
+.dropDown:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    float: none;
+    position: absolute;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+/* Matchscout */
+
+
+.blankinput{
+    border: 0px solid white;
+    border-radius: 50px;
+    box-shadow: 15px 18px 15px rgb(54, 54, 54);
+
+    width:10%;
+    height: 100px;
+    font-size: 55px;
+    margin-bottom: 1%;
+    text-align:center;
+    transform: translate(0%, -15%);
+}
+
+
+.buttonsm{
+    transition: 0.5s;
+    border: 1px solid black;
+    border-radius: 100px;
+    background-color: rgb(125, 66, 66);
+    cursor: pointer;
+    width:10%;
+	height: 50%;
+	font-size: 100px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+	font-family: Monaco;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 15px 18px 15px rgb(54, 54, 54);
+}
+
+.buttonsm:hover{
+    transition: 0.5s;
+    background: linear-gradient(45deg, #660404, red);
+    color: black;
+    border: 1px solid black;
+    border-radius: 100px;
+    box-shadow: 25px 25px 15px rgb(54, 54, 54);
+    transform: scale(1.1);
+}
+
+
+.buttonsp{
+    transition: 0.5s;
+    border: 1px solid black;
+    border-radius: 100px;
+    background-color: #04AA6D;
+    cursor: pointer;
+    width:10%;
+	height: 50%;
+	font-size: 100px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+	font-family: Monaco;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 15px 18px 15px rgb(54, 54, 54);
+}
+
+.buttonsp:hover{
+    transition: 0.5s;
+    background: linear-gradient(45deg, green, rgb(24, 185, 24), rgb(0,255,60));
+    color: black;
+    border: 1px solid black;
+    border-radius: 100px;
+    box-shadow: 25px 25px 15px rgb(54, 54, 54);
+    transform: scale(1.1);
+}
+
+
+.topright{
+    transition: 0.5s;
+    cursor: pointer;
+    width:	15%;
+	height: 5%;
+	margin-top: 1.5%;
+    margin-right: 1.5%;
+	font-size: 50px;
+	font-family: Monaco, Bold;
+    background: linear-gradient(45deg, green, #0e5734); 
+    border: 10px solid;
+    border-radius: 100px;
+    box-shadow: 15px 18px 15px rgb(54, 54, 54);
+    text-align: center;
+    float: right;
+}
+
+.topright:hover{
+    transition: 0.5s;
+    background: linear-gradient(45deg, #0e5734, green);
+    color: limegreen;
+    border: 10px solid black;
+    border-radius: 100px;
+    box-shadow: 25px 25px 15px rgb(54, 54, 54);
+    transform: scale(1.1);
+    transform: rotateZ(5deg);
+}
+
+.topleft{
+    transition: 0.5s;
+    cursor: pointer;
+    width:	auto;
+    height: auto;
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+    font-size: 100px;
+    font-family: Monaco, Bold;
+    background: linear-gradient(45deg, green, #0e5734); 
+    border: 10px solid;
+    border-radius: 100px;
+    box-shadow: 15px 18px 15px rgb(54, 54, 54);
+    text-align: center;
+    float: left;
+    
+}
+    
+.topleft:hover{
+    transition: 0.5s;
+    background: linear-gradient(45deg, #0e5734, green);
+    color: limegreen;
+    border: 10px solid black;
+    border-radius: 100px;
+    box-shadow: 25px 25px 15px rgb(54, 54, 54);
+    transform: scale(1.1);
+    transform: rotateZ(5deg);
+}
+
+.img-container {
+    text-align: center;
+    display: block;
+  }
+  
+ 
+
+
+
+/*
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+
+/*
+.slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <h2>Toggle Switch</h2>
+  
+  <label class="switch">
+    <input type="checkbox">
+    <span class="slider"></span>
+  </label>
+  
+  <label class="switch">
+    <input type="checkbox" checked>
+    <span class="slider"></span>
+  </label><br><br>
+  
+  <label class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+  </label>
+  
+  <label class="switch">
+    <input type="checkbox" checked>
+    <span class="slider round"></span>
+  </label>
+  */
+
+
+.nav{
+    display:flex;
+    text-align: center;
+    float:right;
+    font-size: 50px;
+    border: 10px solid black;
+    border-radius: 50px;
+    width: 30%;
+    height: 30%;
+    
+}
+
+
+.lsdiv{
+    opacity: 0;
+    display: flex;
+    float:right;
+    flex-flow: wrap;
+    width: 85%;
+    font-size: 70px;
+    background-color: aqua;
+    border-radius: 15px;
+    height: 100%;
+    border: 2px solid black;
+}
+
+.lsdiv a{
+    text-decoration: none;
+    font-family: Monaco;
+    color: white;
+    opacity: 1;
+}
+
+.lsbutton{
+    display: flex;
+    float: right;
+    text-align: right;
+    width:10%;
+    height: 100%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    flex-flow: column;
+    background-color: transparent;
+    border: transparent;
+}
+
+.holder{
+    display: flex;
+    float: left;
+    width:100%;
+    height: 100px;
+    cursor: pointer;
+    border: transparent;
+    background: linear-gradient(to right, black 10%, transparent -90%);
+}
+
+.holder p{
+    font-size: 70px;
+}
+
+.holder:focus .lsdiv{
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+    
+}

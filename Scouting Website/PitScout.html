@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pit Scouting</title>
+    <link rel="stylesheet" href="styles.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    
+    <button type="button" class="holder">
+        <div id="lsPit" class="lsdiv">
+            <a href="Home.html">Home</a>
+            <a href="matchScout.html">Match Scouting</a>
+            <a href="login.html">Logout</a>
+        </div>
+    </button>
+    
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h1 style="font-family: Monaco;">Pit Scouting</h1>
+
+    
+
+    <center>
+    <form id="form">
+        <div class="info">
+            <label class="labelText" for="Scouter Name">Scouter Name:</label>
+            <input id="Scouter Name" name="Scouter Name" class="inputbox" type='text'></input> <br><br>
+        </div>
+
+        <div class="info" id="PitInfo">
+            <label class='labelText' for="Team Number">Team Number:</label>
+            <input id="Team Number" name="Team Number" class="inputbox" type='number'></input><br>
+
+            
+            <label class='labelText' for="Drivetrain">Drivetrain:</label>
+            
+            <select class="dropdown" name="Drivetrain Options" id="Drivetrain">
+                <option class="dropdownformat" value="None">Other</option>
+                <option class="dropdownformat" value="Arcade">Arcade</option>
+                <option class="dropdownformat" value="Tank">Tank</option>
+                <option class="dropdownformat" value="Mecanum">Mecanum</option>
+                <option class="dropdownformat" value="Swerve">Swerve</option>
+            </select>
+            
+            <input id="Drivetrain" name="Drivetrain" class="inputbox" type='text' placeholder="Other info"></input><br>
+            
+
+
+            <label class='labelText' for="Intake">Intake:</label>
+        
+            <select class="dropdown" name="Intake Options" id="Intake">
+                <option class="dropdownformat" value="None">None</option>
+                <option class="dropdownformat" value="Roller">Roller</option>
+                <option class="dropdownformat" value="Air">Air</option>
+                <option class="dropdownformat" value="Pincher">Pincher</option>
+                <option class="dropdownformat" value="Pincher">Other/Unknown</option>
+                <input class="inputbox" type="text" id="other" placeholder="Other info"></input> <br><br>
+            </select>
+
+        </div>
+        
+        <div class="info">
+            <label class='labelText' for="Extra Info">Extra Info:</label>
+            <textarea class="ebox" id="Extra Info" name="Extra Info" cols="30" rows="2"></textarea>
+        </div>
+
+        
+        <br><br><br>
+        <div>
+            <buttons id="anaSub" class="buttons"  type="submit" onclick="submitPit()">Submit</buttons> <br><br><br><br><br><br><br><br><br><br>
+        </div>
+    
+    </form>    
+    
+    </center>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
