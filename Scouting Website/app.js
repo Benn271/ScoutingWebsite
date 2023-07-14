@@ -1,12 +1,6 @@
 function clearPitInput(){
     //store in varibles
 
-    let scouterName = document.getElementById('Scouter Name').value;
-    let teamNumber = document.getElementById('Team Number').value;
-    let extraInfo = document.getElementById('Extra Info').value;
-    let drivetrain = document.getElementById('Drivetrain').value;
-    let intake = document.getElementById('Intake').value;
-    let otherintake = document.getElementById('other').value;
    
 
     /*test var store
