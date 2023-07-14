@@ -8,7 +8,6 @@ function clearPitInput(){
     let intake = document.getElementById('Intake').value;
     let otherintake = document.getElementById('other').value;
    
-
     /*test var store
 
     console.log("Scouter Name: " + scouterName);
