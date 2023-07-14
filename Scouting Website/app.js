@@ -5,13 +5,12 @@ function clearPitInput(){
 
     /*test var store
 
-    console.log("Scouter Name: " + scouterName);
-    console.log("Team Number: " + teamNumber);
-    console.log("Drivetrain: " + drivetrain)
-    console.log("Extra Info: " + extraInfo);
-    console.log("Intake: " + intake);
-    console.log("Other: " + otherintake);
-    console.log(" ");*/
+    console.log("Scouter N
+    console.log("Drivetrai
+    console.log("Extr\
+    ole.log(
+    console.log(
+    console.log(" 
 
     //send info
 
