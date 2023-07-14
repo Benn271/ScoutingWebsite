@@ -575,6 +575,6 @@ input:checked + .slider:before {
 .holder:focus .lsdiv{
     transition: 0.5s;
     opacity: 1;
-    pointer-events: all;
+    
     
 }
