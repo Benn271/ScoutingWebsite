@@ -16,14 +16,7 @@ function clearPitInput(){
     //send info
 
     
-    //clear input
-
-    document.getElementById('Scouter Name').value=' ';
-    document.getElementById('Team Number').value=null;
-    document.getElementById('Drivetrain').value='';
-    document.getElementById('Extra Info').value=' ';
-    document.getElementById('Intake').value='None';
-    document.getElementById('other').value=' ';
+    //clear in
     
     
 
