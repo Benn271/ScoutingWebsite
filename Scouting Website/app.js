@@ -1,3 +1,7 @@
+/**
+ * The code includes functions for clearing input fields, submitting form data, and manipulating match
+ * and pit data in a JavaScript application.
+ */
 function clearPitInput(){
     //store in varibles
 
@@ -47,23 +51,27 @@ function submitPit(){
 
 
 ////////////////////       ////////////////////                     MATCH                            ////////////////////////////////////
-let valh = 0;
 let symbol;
+let valh = 0;
 let valm = 0;
 let vall = 0;
-let m = 0;
 let h = 0;
+let m = 0;
 let l = 0;
-let m1 = 0;
+let m1a = 0;
+let m2a = 0;
 
-let tvalh = 0;
+
 let tsymbol;
+let tvalh = 0;
 let tvalm = 0;
 let tvall = 0;
-let tm = 0;
 let th = 0;
+let tm = 0;
 let tl = 0;
-let m2 = 0;
+let m1t = 0;
+let m2t = 0;
+
 
 function clearMatchInput(){
     //store in varibles
@@ -75,7 +83,8 @@ function clearMatchInput(){
     let CubeM = document.getElementById('CubeM').value;
     let charge = document.getElementById('Charge').value;
     let chargenum = document.getElementById('chargenum').value;
-    let Missed1 = document.getElementById('Missed1').value;
+    let Missed1A = document.getElementById('Missed1A').value;
+    let Missed2A = document.getElementById('Missed2A').value;
 
 
     let ConeHt = document.getElementById('ConeHt').value;
@@ -86,7 +95,8 @@ function clearMatchInput(){
     let CubeMt = document.getElementById('CubeMt').value;
     let charget = document.getElementById('Charget').value;
     let chargenumt = document.getElementById('chargenumt').value;
-    let Missed2 = document.getElementById('Missed2').value;
+    let Missed1T = document.getElementById('Missed1T').value;
+    let Missed2T = document.getElementById('Missed2T').value;
 
 
 
@@ -96,11 +106,12 @@ function clearMatchInput(){
     console.log("ConeH: " + ConeH);
     console.log("ConeM: " + ConeM);
     console.log("ConeL: " + ConeL);
-    console.log("Missed1: " + Missed1);
+    console.log("Missed1A: " + Missed1A);
     console.log(" ");
     console.log("CubeH: " + CubeH);
     console.log("CubeM: " + CubeM);
-    console.log("CubeL: " + CubeL);
+    console.log("CubeL: " + CubeL);    
+    console.log("Missed2A: " + Missed2A);
     console.log(" ");
     console.log('Charge: ' + charge);
     console.log('Number charged: ' + chargenum);
@@ -109,11 +120,12 @@ function clearMatchInput(){
     console.log("ConeHt: " + ConeHt);
     console.log("ConeMt: " + ConeMt);
     console.log("ConeLt: " + ConeLt);
-    console.log("Missed2: " + Missed2);
+    console.log("Missed1T: " + Missed1T);
     console.log(" ");
     console.log("CubeHt: " + CubeHt);
     console.log("CubeMt: " + CubeMt);
-    console.log("CubeLt: " + CubeLt);
+    console.log("CubeLt: " + CubeLt);    
+    console.log("Missed2T: " + Missed2T);
     console.log(" ");
     console.log('Charget: ' + charget);
     console.log('Number chargedt: ' + chargenumt);
@@ -130,7 +142,8 @@ function clearMatchInput(){
     document.getElementById('CubeM').value=null;
     document.getElementById('Charge').value='False';
     document.getElementById('chargenum').value=null;
-    document.getElementById('Missed1').value=null;
+    document.getElementById('Missed1A').value=null;
+    document.getElementById('Missed2A').value=null;
 
 
     document.getElementById('ConeHt').value=null;
@@ -140,26 +153,30 @@ function clearMatchInput(){
     document.getElementById('CubeLt').value=null;
     document.getElementById('CubeMt').value=null;
     document.getElementById('Charget').value='False';
-    document.getElementById('chargenumt').value=null;
-    document.getElementById('Missed2').value=null;
+    document.getElementById('chargenumt').value=null;    
+    document.getElementById('Missed1T').value=null;
+    document.getElementById('Missed2T').value=null;
 
 
+    symbol;    
     valh = 0;
-    symbol
-    valm = 0;
-    vall = 0;
-    m = 0;
+    valm = 0;    
+    vall = 0;    
     h = 0;
+    m = 0;
     l = 0;
+    m1a = 0;
+    m2a = 0;
 
-
+    tsymbol;   
     tvalh = 0;
-    tsymbol;
     tvalm = 0;
-    tvall = 0;
-    tm = 0;
+    tvall = 0;   
     th = 0;
+    tm = 0;
     tl = 0;
+    m1t = 0;
+    m2t = 0;
 }
 
 function submitMatch(){
@@ -237,13 +254,24 @@ let lCube = (symbol) => {
     
 }
 
-let Missed1 = (symbol) => {
+let missed1a = (symbol) => {
     if(symbol === '+'){
-        m1++;
-        document.getElementById('Missed1').value = l;
+        m1a++;
+        document.getElementById('Missed1A').value = m1a;
     }else if(symbol === '-'){
-        m1--;
-        document.getElementById('Missed1').value = l;
+        m1a--;
+        document.getElementById('Missed1A').value = m1a;
+    }
+    
+}
+
+let missed2a = (symbol) => {
+    if(symbol === '+'){
+        m2a++;
+        document.getElementById('Missed2A').value = m2a;
+    }else if(symbol === '-'){
+        m2a--;
+        document.getElementById('Missed2A').value = m2a;
     }
     
 }
@@ -265,6 +293,7 @@ let thCone = (tsymbol) => {
     }
     
 }
+
 let tmCone = (tsymbol) => {
     if(tsymbol === '+'){
         tvalm++;
@@ -320,13 +349,24 @@ let tlCube = (tsymbol) => {
     
 }
 
-let Missed2 = (symbol) => {
-    if(symbol === '+'){
-        m2++;
-        document.getElementById('Missed2').value = l;
-    }else if(symbol === '-'){
-        m2--;
-        document.getElementById('Missed2').value = l;
+let missed1t = (tsymbol) => {
+    if(tsymbol === '+'){
+        m1t++;
+        document.getElementById('Missed1T').value = m1t;
+    }else if(tsymbol === '-'){
+        m1t--;
+        document.getElementById('Missed1T').value = m1t;
+    }
+    
+}
+
+let missed2t = (tsymbol) => {
+    if(tsymbol === '+'){
+        m2t++;
+        document.getElementById('Missed2T').value = m2t;
+    }else if(tsymbol === '-'){
+        m2t--;
+        document.getElementById('Missed2T').value = m2t;
     }
     
 }
@@ -385,6 +425,7 @@ let submitSign = () => {
     console.log("Login Username: " + usernameS);
     console.log("Login 1Password: " + paswordS1);
     console.log("Login 2Password: " + paswordS2);
+discord
 
     //clear the inputs
     

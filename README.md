@@ -1,3 +1,4 @@
 # ScoutingWebsite
 This is 2023 scouting website for FIRST <br>
-Created by Benjy & JD of team 3179
+Created by Benjy & JD of team 3179 <br>
+This is created for the season 2024, but is based on the season of 2023.
