@@ -27,7 +27,19 @@
     <h1 style="font-family: Monaco;">Match Scouting</h1>
 
     <form>
+        <!--Info-->
         <div class="infoM">
+            <label class="labelText" for="Scouter Name">Scouter Name:</label>
+            <input id="Scouter Name" name="Scouter Name" class="inputbox" type='text'></input> <br><br>
+        </div>
+
+        <div class="infoM" id="PitInfo">
+            <label class='labelText' for="Team Number">Team Number:</label>
+            <input id="Team Number" name="Team Number" class="inputbox" type='number'></input> <br>
+        </div>
+
+        <div class="infoM">
+
             <!--Auto-->
             <h2 style="font-family: Monaco;">Auto</h2> <br>
 
@@ -120,7 +132,7 @@
             <label class="labelText" for="ConeHt" style="padding: 25px;">High: </label> 
             <label class="labelText" for="ConeMt" style="padding: 25px;">Middle: </label> 
             <label class="labelText" for="ConeMt" style="padding: 25px;">Low: </label> 
-            <label class="labelText" for="Missed3" style="margin-left: 200px; margin-right: -380px;">Missed:</label> <br> 
+            <label class="labelText" for="Missed1T" style="margin-left: 200px; margin-right: -380px;">Missed:</label> <br> 
 
 
             <button onclick="thCone('+')" type="button" class="buttonsp">+</button>
@@ -131,7 +143,7 @@
             <input id="ConeHt" class="blankinput" type="number"></input>
             <input id="ConeMt" class="blankinput" type="number"></input>
             <input id="ConeLt" class="blankinput" type="number"></input>
-            <input id="Missed3" class="blankinput" type="number" style="margin-left: 200px; margin-right: -380px;"></input><br>
+            <input id="Missed1T" class="blankinput" type="number" style="margin-left: 200px; margin-right: -380px;"></input><br>
             
             <button onclick="thCone('-')" class="buttonsm" type="button">-</button>
             <button onclick="tmCone('-')" class="buttonsm" type="button">-</button> 
@@ -150,7 +162,7 @@
             <label class="labelText" for="CubeHt" style="padding: 25px;">High: </label> 
             <label class="labelText" for="CubeMt" style="padding: 25px;">Middle: </label> 
             <label class="labelText" for="CubeMt" style="padding: 25px;">Low: </label> 
-            <label class="labelText" for="Missed3" style="margin-left: 200px; margin-right: -380px;">Missed:</label> <br> 
+            <label class="labelText" for="Missed2T" style="margin-left: 200px; margin-right: -380px;">Missed:</label> <br> 
 
             <button onclick="thCube('+')" type="button" class="buttonsp">+</button>
             <button onclick="tmCube('+')" type="button" class="buttonsp">+</button>
@@ -160,7 +172,7 @@
             <input id="CubeHt" class="blankinput" type="number"></input>
             <input id="CubeMt" class="blankinput" type="number"></input>
             <input id="CubeLt" class="blankinput" type="number"></input>
-            <input id="Missed3" class="blankinput" type="number" style="margin-left: 200px; margin-right: -380px;"></input><br>
+            <input id="Missed2T" class="blankinput" type="number" style="margin-left: 200px; margin-right: -380px;"></input><br>
 
             <button onclick="thCube('-')" class="buttonsm" type="button">-</button> 
             <button onclick="tmCube('-')" class="buttonsm" type="button">-</button> 
