@@ -254,7 +254,7 @@ let lCube = (symbol) => {
     
 }
 
-let missed1a = (symbol) => {
+let oamissed = (symbol) => {
     if(symbol === '+'){
         m1a++;
         document.getElementById('Missed1A').value = m1a;
@@ -265,7 +265,7 @@ let missed1a = (symbol) => {
     
 }
 
-let missed2a = (symbol) => {
+let tamissed = (symbol) => {
     if(symbol === '+'){
         m2a++;
         document.getElementById('Missed2A').value = m2a;
@@ -349,7 +349,7 @@ let tlCube = (tsymbol) => {
     
 }
 
-let missed1t = (tsymbol) => {
+let otmissed = (tsymbol) => {
     if(tsymbol === '+'){
         m1t++;
         document.getElementById('Missed1T').value = m1t;
@@ -360,7 +360,7 @@ let missed1t = (tsymbol) => {
     
 }
 
-let missed2t = (tsymbol) => {
+let ttmissed = (tsymbol) => {
     if(tsymbol === '+'){
         m2t++;
         document.getElementById('Missed2T').value = m2t;
