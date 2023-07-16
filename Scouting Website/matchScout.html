@@ -38,12 +38,18 @@
 
             <input id="Team Number" name="Team Number" class="inputbox" type='number' placeholder="Team Number"></input> <br>
 
-            <label class='labelText' for="Team Color">Team Color</label> <br>
-            pdown" name="Team Color" id="Intake">
-                <option class="dropdownformat" value="None">Blue</option>
-                <option class="dropdownformat" value="Roller">Red</option>
-
-            <label class='labelText' for="Match Type">Match Type</label> <br>
+            <select class="dropdown" name="Team Color" id="Team Color">
+                <option value="" disabled selected hidden>Team Color</option>
+                <option class="dropdownformat" value="Blue">Blue</option>
+                <option class="dropdownformat" value="Red">Red</option>
+            </select> <br>
+            
+            <select class="dropdown" name="match Type" id="Match Type">
+                <option value="" disabled selected hidden>Match Type</option>
+                <option class="dropdownformat" value="Practice">Practice</option>
+                <option class="dropdownformat" value="Qualifiers">Qualifiers</option>
+                <option class="dropdownformat" value="Finals">Finals</option>
+            </select><br>
         </center>
         </div>
 
@@ -216,7 +222,7 @@
         <br><br><br>
     
         
-        <buttons id="anaSub" class="buttons" type="submit" onclick="submitMatch()">Submit</buttons> <br><br><br><br><br><br><br><br><br>
+        <buttons id="anaSub" class="buttons" type="submit" onclick="submitMatch()">Submit</buttons> <br><br><br><br><br>
         </center>
     </form>
     </div>
@@ -238,21 +244,5 @@
 
     <script src="app.js"></script>
 </body>
-
-<footer>
-    <h2>Contact Us</h2>
-    <br>
-    <h3>Team</h3>
-    <h4>3179</h4>
-    <h5><a href="mailto:ahsrobotics@adairschools.org? subject=Contact Us">Email</a></h5>
-    <br>
-    <h3>Developers:</h3><br>
-    <h4>Benjy Barrett</h4>
-    <h5><a href="mailto:benjybarrett52@gmail.com? subject=Contact Benjy">Email</a></h5>
-    <br>
-    <h4>JD Wilson</h4>
-    <h5><a href="mailto:jd4wilson@gmail.com? subject=Contact JD">Email</a></h5>
-
-</footer>
 
 </html>

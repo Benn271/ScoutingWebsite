@@ -72,8 +72,6 @@ h5{
     color: black;
     width:	auto;
     height: 85%;
-    margin-left: 50px;
-    margin-right: 50px;
     margin-top: 1%;
     display: flexbox;
     justify-content: center;
@@ -123,6 +121,9 @@ h5{
     font-family: Monaco;
     font-size: 25px;
     box-shadow: 10px 7px 15px rgb(54, 54, 54);
+    justify-content: center;    
+        text-align: center;
+
 }
 
 
@@ -156,6 +157,7 @@ h5{
 	font-size: 100px;
 	font-family: Monaco, Bold;
     justify-content: center;
+    text-align: center;
     background: linear-gradient(45deg, green, #0e5734); 
     border: 10px solid;
     border-radius: 100px;
@@ -174,7 +176,22 @@ h5{
     transform: rotateZ(5deg);
 }
 
-
+/*For link buttons*/
+.buttonl{
+    transition: 0.5s;
+    cursor: pointer;
+    width:	auto;
+	height: auto%;
+	margin-top: 1.5%;
+	font-size: 50px;
+	font-family: Monaco;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(45deg, green, #0e5734); 
+    border: 10px solid;
+    border-radius: 100px;
+    box-shadow: 15px 18px 15px rgb(54, 54, 54);
+}
 
 /* For Submit*/
 .buttons{
@@ -213,27 +230,30 @@ h5{
 
 
 .dropdown{
-    transition: 0.5s;
+    transition: 0.1s;
     border: 0px solid white; 
-    width: 250px;
-    height: 50px;
+    width: 200px;
+    height: 45px;
     border-radius: 15px;
     font-family: Monaco;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
 }
 
 .dropdown:hover{
     transition: 5s;
     transform: scale(1.1);
+    text-align: center;    
+    justify-content: center;    
 }
 
 .dropdownformat{
     border: 100px solid black;
     border-radius: 10px;
     font-family: Monaco;
-    font-size: 30px;
-    height: 30px;
+    font-size: 25px;
+    width: auto;
+    height: 25px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -301,6 +321,7 @@ h5{
     width:50px;
     height: 50px;
     font-size: 55px;
+    font-family: Monaco;
     margin: 1%;
     text-align:center;
     transform: translate(0%, -15%);
@@ -365,7 +386,7 @@ h5{
 .topright{
     transition: 0.5s;
     cursor: pointer;
-    width:	15%;
+    width:	auto;
 	height: 5%;
 	margin-top: 1.5%;
     margin-right: 1.5%;
@@ -419,9 +440,17 @@ h5{
     transform: rotateZ(5deg);
 }
 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
 .img-container {
     text-align: center;
-    display: block;
+    display: flex;
+    width: 25%;
+    height: auto;
   }
 
 .lsdiv{
