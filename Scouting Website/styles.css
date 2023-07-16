@@ -181,14 +181,14 @@ h5{
     transition: 0.5s;
     cursor: pointer;
     width:	auto;
-	height: auto%;
+	height: auto;
 	margin-top: 1.5%;
-	font-size: 50px;
+	font-size: 25px;
 	font-family: Monaco;
     justify-content: center;
     text-align: center;
     background: linear-gradient(45deg, green, #0e5734); 
-    border: 10px solid;
+    border: 5px solid;
     border-radius: 100px;
     box-shadow: 15px 18px 15px rgb(54, 54, 54);
 }
@@ -225,6 +225,12 @@ h5{
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.button-wrapper {
+    text-align: center;
+    display: inline-block; 
+    margin: 10px;
 }
 
 
