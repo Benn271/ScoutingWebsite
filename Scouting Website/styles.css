@@ -296,7 +296,7 @@ h5{
 .blankinput{
     border: 0px solid white;
     border-radius: 10px;
-    box-shadow: 15px 18px 15px rgb(54, 54, 54);
+    box-shadow: 15px 12px 15px rgb(54, 54, 54);
     width:50px;
     height: 50px;
     font-size: 55px;
@@ -319,7 +319,7 @@ h5{
 	font-family: Monaco;
     text-align: center;
     justify-content: center;
-    box-shadow: 15px 18px 15px rgb(54, 54, 54);
+    box-shadow: 15px 12px 15px rgb(54, 54, 54);
 }
 
 .buttonsm:hover{
@@ -346,7 +346,7 @@ h5{
 	font-family: Monaco;
     text-align: center;
     justify-content: center;
-    box-shadow: 15px 18px 15px rgb(54, 54, 54);
+    box-shadow: 15px 12px 15px rgb(54, 54, 54);
 }
 
 .buttonsp:hover{

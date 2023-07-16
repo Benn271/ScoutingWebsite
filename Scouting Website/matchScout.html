@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Match Scouting</title>
+    <title style="font-size: 100px;">Match Scouting</title>
     <link rel="stylesheet" href="styles.css">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
@@ -16,21 +15,21 @@
     <!-- The `<div id="lsPit" class="lsdiv">` section is creating a navigation bar at the top of the
     page. It contains four links: "Home", "Pit Scouting", "Logout", and "About". These links allow
     users to navigate to different pages on the website. -->
-    <div id="lsPit" class="lsdiv">
+    <!--<div id="lsPit" class="lsdiv">
         <a href="Home.html">Home</a>
         <a href="PitScout.html">Pit Scouting</a>
         <a href="login.html">Logout</a>
         <a href="About.html">About</a>
-    </div>
+    </div> -->
     <br><br><br>
 
-    <h1 style="font-family: Monaco;">Match Scouting</h1>
+    <h1 style="font-size: 350%;">Match Scouting</h1> <br>
 
     <form>
         <!--Info-->
         <div class="infoM">
             <label class="labelText" for="Scouter Name">Scouter Name:</label>
-            <input id="Scouter Name" name="Scouter Name" class="inputbox" type='text'></input> <br><br>
+            <input id="Scouter Name" name="Scouter Name" class="inputbox" type='text'></input> <br>
         </div>
 
         <div class="infoM" id="PitInfo">
@@ -41,13 +40,11 @@
         <div class="infoM">
 
             <!--Auto-->
-            <h2 style="font-family: Monaco;">Auto</h2> <br>
+            <h3 style="font-family: Monaco;">Auto</h3>
 
             <hr style="border:10px solid black">
-
             
-
-            <h3 style="font-family: Monaco;">Cone</h3> <br>
+            <h4 style="font-family: Monaco;">Cone</h4>
 
             <hr style="border:5px solid black"><br>
 
@@ -75,7 +72,7 @@
 
             <hr style="border:5px solid black">
 
-            <h3 style="font-family: Monaco;">Cube</h3> <br>
+            <h4 style="font-family: Monaco;">Cube</h4>
 
             <hr style="border:5px solid black">
 
@@ -101,30 +98,31 @@
             <button onclick="Missed2A('-')" class="buttonsm" type="button" style="margin-left: 50px;">-</button> <br><br>
 
             <hr style="border:5px solid black">
-
-
-            <label class="labelText" for="Charge">Charged</label> <br>
+            <center> 
+            <label class="labelText" for="Charge" style="margin: 0%;">Charged:</label> <br>
+            
+            <hr style="border:5px solid black">
 
             <select class="dropDown" name="Charge" id="Charge">
                 <option class="dropdownformat" value="False">False</option>
                 <option class="dropdownformat" value="True">True</option>
                 <input class="iNputbox" id="chargenum" type="number" style="width: 300px;" placeholder="How many charged?"></input>
             </select> <br><br>
-
+            </center>
         </div>
 
 
-        <br><br><hr style="border:25px solid rgb(255, 255, 255); border-radius: 5px;"><br><br>
+        <hr style="border:25px solid rgb(255, 255, 255); border-radius: 0px;">
 
         <!--Teleop-->
 
-        <div class="infoM">
+        <div class="infoM" style="background-color: #5DBB63;">
             
-            <h2 style="font-family: Monaco;">Teleop</h2> <br>
+            <h3 style="font-family: Monaco;">Teleop</h3> <br>
 
             <hr style="border:10px solid black">
 
-        
+            <h4 style="font-family: Monaco;">Cone</h4>
 
             <hr style="border:5px solid black"><br>
 
@@ -154,7 +152,7 @@
 
             <hr style="border:5px solid black">
 
-            <h3 style="font-family: Monaco;">Cone</h3> <br>
+            <h4 style="font-family: Monaco;">Cube</h4>
 
             <hr style="border:5px solid black">
 
@@ -180,9 +178,10 @@
             <button onclick="Missed2T('-')" class="buttonsm" type="button" style="margin-left: 50px;">-</button> <br><br>
 
             <hr style="border:5px solid black">
-
-            <label class="labelText" for="Charget">Charged</label> <br>
-
+        <center> 
+            <label class="labelText" for="Charge" style="margin: 0%;">Charged:</label> <br>
+            
+            <hr style="border:5px solid black">
 
             <select class="dropDown" name="Charge" id="Charget">
                 <option class="dropdownformat"value="False">False</option>
@@ -194,7 +193,7 @@
         </div>
         <br><br><br>
     
-       <center> 
+        
         <buttons id="anaSub" class="buttons" type="submit" onclick="submitMatch()">Submit</buttons> <br><br><br><br><br><br><br><br><br>
         </center>
     </form>
@@ -225,7 +224,7 @@
     <h4>3179</h4>
     <h5><a href="mailto:ahsrobotics@adairschools.org? subject=Contact Us">Email</a></h5>
     <br>
-    <h3>Designers</h3>
+    <h3>Developers:</h3><br>
     <h4>Benjy Barrett</h4>
     <h5><a href="mailto:benjybarrett52@gmail.com? subject=Contact Benjy">Email</a></h5>
     <br>
