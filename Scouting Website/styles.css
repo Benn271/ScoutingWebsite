@@ -97,9 +97,10 @@ h5{
 .labelText{
     font-family: Monaco;
     color: white;
-    font-size: 50px;
+    font-size: 25px;
     display: flexbox;
-    text-align: center;
+    text-align: left;
+    margin-left: 50px;
 }
 
 .inputbox{
@@ -294,13 +295,12 @@ h5{
 
 .blankinput{
     border: 0px solid white;
-    border-radius: 50px;
+    border-radius: 10px;
     box-shadow: 15px 18px 15px rgb(54, 54, 54);
-
-    width:10%;
-    height: 100px;
+    width:50px;
+    height: 50px;
     font-size: 55px;
-    margin-bottom: 1%;
+    margin: 1%;
     text-align:center;
     transform: translate(0%, -15%);
 }
@@ -309,14 +309,13 @@ h5{
 .buttonsm{
     transition: 0.5s;
     border: 1px solid black;
-    border-radius: 100px;
+    border-radius: 10px;
     background-color: rgb(125, 66, 66);
     cursor: pointer;
-    width:10%;
-	height: 50%;
-	font-size: 100px;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    width:50px;
+	height: 50px;
+	font-size: 50px;
+    margin: 1%;
 	font-family: Monaco;
     text-align: center;
     justify-content: center;
@@ -337,14 +336,13 @@ h5{
 .buttonsp{
     transition: 0.5s;
     border: 1px solid black;
-    border-radius: 100px;
+    border-radius: 10px;
     background-color: #04AA6D;
     cursor: pointer;
-    width:10%;
-	height: 50%;
-	font-size: 100px;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    width:50px;
+	height: 50px;
+	font-size: 50px;
+    margin: 1%;
 	font-family: Monaco;
     text-align: center;
     justify-content: center;
