@@ -70,7 +70,7 @@ h5{
     border: 10px solid;
     border-radius: 20px;
     color: black;
-    width:	46%;
+    width:	auto;
     height: 85%;
     margin-left: 50px;
     margin-right: 50px;
@@ -100,7 +100,7 @@ h5{
     font-size: 25px;
     display: flexbox;
     text-align: left;
-    margin-left: 50px;
+    margin-left: 0px;
 }
 
 .inputbox{
@@ -294,6 +294,7 @@ h5{
 
 
 .blankinput{
+    pointer-events: none;
     border: 0px solid white;
     border-radius: 10px;
     box-shadow: 15px 12px 15px rgb(54, 54, 54);
@@ -303,6 +304,7 @@ h5{
     margin: 1%;
     text-align:center;
     transform: translate(0%, -15%);
+    
 }
 
 
