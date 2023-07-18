@@ -425,7 +425,7 @@ let submitSign = () => {
     console.log("Login Username: " + usernameS);
     console.log("Login 1Password: " + paswordS1);
     console.log("Login 2Password: " + paswordS2);
-discord
+
 
     //clear the inputs
     

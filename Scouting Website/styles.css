@@ -182,10 +182,10 @@ h5{
     cursor: pointer;
     width:	auto;
 	height: auto;
-	margin-top: 1.5%;
+	margin-top: 1%;
 	font-size: 25px;
 	font-family: Monaco;
-    justify-content: center;
+    justify-content: baseline;
     text-align: center;
     background: linear-gradient(45deg, green, #0e5734); 
     border: 5px solid;
@@ -449,8 +449,10 @@ h5{
 .container {
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
+
+
 
 .img-container {
     text-align: center;
