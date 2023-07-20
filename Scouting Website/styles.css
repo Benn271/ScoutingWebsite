@@ -457,7 +457,7 @@ h5{
 .img-container {
     text-align: center;
     display: flex;
-    width: 25%;
+    width: 50%;
     height: auto;
   }
 
@@ -467,13 +467,15 @@ h5{
     float:right;
     flex-flow: wrap;
     width: 100%;
-    font-size: 70px;
+    font-size: 100%;
     background-color:#2fa337;
     border-radius: 20px;
     height: 5.5rem;
     border: 2px solid black;
     z-index: 1;
     opacity: 0.8;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .lsdiv a{
