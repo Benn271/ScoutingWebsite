@@ -98,14 +98,15 @@ h5{
     font-size: 25px;
     display: flexbox;
     text-align: left;
+    justify-content: center;
     margin-left: 0px;
 }
 
 .inputbox{
     border: 3px solid darkslategray;
     border-radius: 50px;
-    width:40%;
-    height: 40px;
+    width:  50%;
+    height: auto;
     font-family: Monaco;
     font-size: 30px; 
     box-shadow: 10px 7px 15px rgb(54, 54, 54);
@@ -247,19 +248,20 @@ h5{
 }
 
 .dropdown:hover{
-    transition: 5s;
+    transition: 0s;
     transform: scale(1.1);
     text-align: center;    
     justify-content: center;    
 }
 
 .dropdownformat{
-    border: 100px solid black;
-    border-radius: 10px;
+    position: absolute;
+    border: 100% solid black;
+    border-radius: 15px;
     font-family: Monaco;
-    font-size: 25px;
+    font-size: 100%;
     width: auto;
-    height: 25px;
+    height: auto;
     display: flex;
     justify-content: center;
     text-align: center;
