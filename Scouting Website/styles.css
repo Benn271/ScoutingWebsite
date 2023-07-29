@@ -34,14 +34,14 @@ h1 {
     color: white;
     font-family: Monaco;
     text-align: center;
-    font-size: 200px;
+    font-size: 350%;
 }
 
 h2 {
     color: white;
     font-family: Monaco;
     text-align: center;
-    font-size: 100px;
+    font-size: 250%;
 }
 
 h3{
@@ -70,10 +70,8 @@ h5{
     border: 10px solid;
     border-radius: 20px;
     color: black;
-    width:	46%;
+    width:	auto;
     height: 85%;
-    margin-left: 50px;
-    margin-right: 50px;
     margin-top: 1%;
     display: flexbox;
     justify-content: center;
@@ -86,9 +84,9 @@ h5{
     width:	auto;
     height: 85%;
     margin-top: 1%;
-    text-align: center;
+    text-align: left;
     display: flexbox;
-    justify-content: center;
+    justify-content: left;
 }
 
 
@@ -97,16 +95,18 @@ h5{
 .labelText{
     font-family: Monaco;
     color: white;
-    font-size: 50px;
+    font-size: 25px;
     display: flexbox;
-    text-align: center;
+    text-align: left;
+    justify-content: center;
+    margin-left: 0px;
 }
 
 .inputbox{
     border: 3px solid darkslategray;
     border-radius: 50px;
-    width:40%;
-    height: 40px;
+    width:  50%;
+    height: auto;
     font-family: Monaco;
     font-size: 30px; 
     box-shadow: 10px 7px 15px rgb(54, 54, 54);
@@ -122,6 +122,9 @@ h5{
     font-family: Monaco;
     font-size: 25px;
     box-shadow: 10px 7px 15px rgb(54, 54, 54);
+    justify-content: center;    
+        text-align: center;
+
 }
 
 
@@ -155,6 +158,7 @@ h5{
 	font-size: 100px;
 	font-family: Monaco, Bold;
     justify-content: center;
+    text-align: center;
     background: linear-gradient(45deg, green, #0e5734); 
     border: 10px solid;
     border-radius: 100px;
@@ -173,7 +177,22 @@ h5{
     transform: rotateZ(5deg);
 }
 
-
+/*For link buttons*/
+.buttonl{
+    transition: 0.5s;
+    cursor: pointer;
+    width:	auto;
+	height: auto;
+	margin-top: 1%;
+	font-size: 25px;
+	font-family: Monaco;
+    justify-content: baseline;
+    text-align: center;
+    background: linear-gradient(45deg, green, #0e5734); 
+    border: 5px solid;
+    border-radius: 100px;
+    box-shadow: 15px 18px 15px rgb(54, 54, 54);
+}
 
 /* For Submit*/
 .buttons{
@@ -209,30 +228,40 @@ h5{
     padding-bottom: 20px;
 }
 
+.button-wrapper {
+    text-align: center;
+    display: inline-block; 
+    margin: 10px;
+}
+
 
 
 .dropdown{
-    transition: 0.5s;
+    transition: 0.1s;
     border: 0px solid white; 
-    width: 250px;
-    height: 50px;
+    width: 200px;
+    height: 45px;
     border-radius: 15px;
     font-family: Monaco;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
 }
 
 .dropdown:hover{
-    transition: 5s;
+    transition: 0s;
     transform: scale(1.1);
+    text-align: center;    
+    justify-content: center;    
 }
 
 .dropdownformat{
-    border: 100px solid black;
-    border-radius: 10px;
+    position: absolute;
+    border: 100% solid black;
+    border-radius: 15px;
     font-family: Monaco;
-    font-size: 30px;
-    height: 30px;
+    font-size: 100%;
+    width: auto;
+    height: auto;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -293,34 +322,35 @@ h5{
 
 
 .blankinput{
+    pointer-events: none;
     border: 0px solid white;
-    border-radius: 50px;
-    box-shadow: 15px 18px 15px rgb(54, 54, 54);
-
-    width:10%;
-    height: 100px;
+    border-radius: 10px;
+    box-shadow: 15px 12px 15px rgb(54, 54, 54);
+    width:50px;
+    height: 50px;
     font-size: 55px;
-    margin-bottom: 1%;
+    font-family: Monaco;
+    margin: 1%;
     text-align:center;
     transform: translate(0%, -15%);
+    
 }
 
 
 .buttonsm{
     transition: 0.5s;
     border: 1px solid black;
-    border-radius: 100px;
+    border-radius: 10px;
     background-color: rgb(125, 66, 66);
     cursor: pointer;
-    width:10%;
-	height: 50%;
-	font-size: 100px;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    width:50px;
+	height: 50px;
+	font-size: 50px;
+    margin: 1%;
 	font-family: Monaco;
     text-align: center;
     justify-content: center;
-    box-shadow: 15px 18px 15px rgb(54, 54, 54);
+    box-shadow: 15px 12px 15px rgb(54, 54, 54);
 }
 
 .buttonsm:hover{
@@ -337,18 +367,17 @@ h5{
 .buttonsp{
     transition: 0.5s;
     border: 1px solid black;
-    border-radius: 100px;
+    border-radius: 10px;
     background-color: #04AA6D;
     cursor: pointer;
-    width:10%;
-	height: 50%;
-	font-size: 100px;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    width:50px;
+	height: 50px;
+	font-size: 50px;
+    margin: 1%;
 	font-family: Monaco;
     text-align: center;
     justify-content: center;
-    box-shadow: 15px 18px 15px rgb(54, 54, 54);
+    box-shadow: 15px 12px 15px rgb(54, 54, 54);
 }
 
 .buttonsp:hover{
@@ -365,7 +394,7 @@ h5{
 .topright{
     transition: 0.5s;
     cursor: pointer;
-    width:	15%;
+    width:	auto;
 	height: 5%;
 	margin-top: 1.5%;
     margin-right: 1.5%;
@@ -419,24 +448,36 @@ h5{
     transform: rotateZ(5deg);
 }
 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 .img-container {
     text-align: center;
-    display: block;
+    display: flex;
+    width: 50%;
+    height: auto;
   }
 
 .lsdiv{
     display: flex;
     position: fixed;
-    float:right;
+    float: right;
     flex-flow: wrap;
     width: 100%;
-    font-size: 70px;
+    height: 7.5%;
+    font-size: 150%;
     background-color:#2fa337;
-    border-radius: 20px;
-    height: 5.5rem;
+    border-radius: 0px;
     border: 2px solid black;
     z-index: 1;
     opacity: 0.8;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .lsdiv a{
